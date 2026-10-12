@@ -1,0 +1,31 @@
+{
+  "name": "limbot",
+  "version": "16.0.0",
+  "description": "Serverless Telegram Micro-SaaS POS & Autonomous Inventory System powered by Groq Llama-3 AI & Google Sheets",
+  "main": "LimBotFactory.js",
+  "scripts": {
+    "factory": "node LimBotFactory.js",
+    "rebuild": "cmd /c rebuild_bot.bat",
+    "editor": "cmd /c buka_editor_manual.bat"
+  },
+  "keywords": [
+    "telegram-bot",
+    "pos-system",
+    "google-apps-script",
+    "clasp",
+    "groq-ai",
+    "llama-3",
+    "micro-saas",
+    "bookkeeping",
+    "warung-sembako",
+    "inventory-agent"
+  ],
+  "author": "LimBot Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.4.2"
+  }
+}

@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Customer Service LimBot</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 0; }
+        header { background-color: #0056b3; color: #fff; padding: 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 24px; }
+        .container { max-width: 900px; margin: 20px auto; padding: 0 20px; }
+        .toc { background: #fff; padding: 15px 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        .toc h2 { margin-top: 0; font-size: 18px; color: #0056b3; }
+        .toc ul { list-style-type: none; padding: 0; }
+        .toc ul li { margin-bottom: 8px; }
+        .toc ul li a { text-decoration: none; color: #333; font-weight: bold; }
+        .toc ul li a:hover { color: #0056b3; }
+        .section { margin-bottom: 40px; }
+        .section-title { font-size: 20px; color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 5px; margin-bottom: 20px; }
+        .card { background: #fff; border-left: 5px solid #0056b3; padding: 15px 20px; margin-bottom: 20px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .card h3 { margin-top: 0; font-size: 16px; color: #d9534f; }
+        .card .response { background-color: #f9f9f9; padding: 15px; border-radius: 4px; border: 1px solid #ddd; font-family: monospace; font-size: 14px; white-space: pre-wrap; color: #222; }
+        .copy-hint { font-size: 12px; color: #666; margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Buku Saku Customer Service - LimBot</h1>
+        <p>Kumpulan Template Balasan Chat Klien</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="toc">
+            <h2>Daftar Isi</h2>
+            <ul>
+                <li><a href="#inbound">1. Pertanyaan Awal Klien (Inbound)</a></li>
+                <li><a href="#outbound">2. Menawarkan Produk (Outbound)</a></li>
+                <li><a href="#sosmed">3. Membalas Komentar Media Sosial</a></li>
+                <li><a href="#teknis">4. Menjawab Keraguan Teknis & Gaptek</a></li>
+                <li><a href="#keberatan">5. Menangani Keberatan Harga (Objection Handling)</a></li>
+                <li><a href="#followup">6. Follow-up & Penutupan Penjualan (Closing)</a></li>
+            </ul>
+        </div>
+
+        <div id="inbound" class="section">
+            <h2 class="section-title">1. Pertanyaan Awal Klien (Inbound)</h2>
+            <div class="card">
+                <h3>Klien: "Ini aplikasi apa mas/mbak? Berapa harganya?"</h3>
+                <div class="response">Halo Bapak/Ibu, terima kasih sudah menghubungi kami.
+
+LimBot adalah asisten kasir warung berbasis Telegram. Bapak/Ibu tidak perlu instal aplikasi kasir berat yang bikin memori HP penuh. Cukup ketik transaksi seperti biasa di chat Telegram (contoh: "Laku beras 5kg 75rb" atau "Bu RT ngutang telur 20rb"), dan sistem kami akan otomatis menyusunnya menjadi laporan keuangan rapi di Excel. 
+
+Biaya langganannya sangat terjangkau, sedang promo hanya Rp 50.000 per bulan.
+Apakah Bapak/Ibu mau mencoba bot demonya secara gratis terlebih dahulu?</div>
+                <div class="copy-hint">Blok teks di atas lalu salin (copy) untuk membalas klien.</div>
+            </div>
+            <div class="card">
+                <h3>Klien: "Gimana cara kerjanya?"</h3>
+                <div class="response">Cara kerjanya sangat praktis Bapak/Ibu.
+1. Bapak/Ibu akan mendapatkan satu Bot Telegram khusus.
+2. Setiap ada pembeli, Bapak/Ibu cukup kirim pesan ke Bot tersebut (misal: "Gula 1kg 15rb").
+3. Di saat yang sama, data tersebut langsung masuk ke dalam buku kas Excel secara otomatis.
+
+Kami juga punya fitur cetak struk PDF untuk diberikan ke pelanggan. Bapak/Ibu mau saya kirimkan link untuk mencobanya sekarang?</div>
+            </div>
+        </div>
+
+        <div id="outbound" class="section">
+            <h2 class="section-title">2. Menawarkan Produk (Outbound)</h2>
+            <div class="card">
+                <h3>Situasi: Broadcast ke Grup WA atau Chat Personal ke Pemilik Warung</h3>
+                <div class="response">Halo Bapak/Ibu pengusaha warung dan toko kelontong.
+
+Apakah Bapak/Ibu sering pusing karena catatan utang pelanggan hilang, atau uang di laci sering selisih karena lupa mencatat pengeluaran?
+
+Kini ada solusi mudah. Dengan LimBot, pembukuan warung cukup dilakukan lewat chat Telegram. Anda cukup ketik transaksinya, sistem kami yang akan otomatis menghitung laba bersih, merekap pengeluaran, dan mengamankan data kasbon setiap hari.
+
+Jika berkenan melihat cara kerjanya, silakan balas pesan ini. Kami akan kirimkan link untuk mencoba secara gratis.</div>
+            </div>
+        </div>
+
+        <div id="sosmed" class="section">
+            <h2 class="section-title">3. Membalas Komentar Media Sosial</h2>
+            <div class="card">
+                <h3>Klien di komentar FB/TikTok: "Info harga", "Mau dong", atau "Gimana caranya?"</h3>
+                <div class="response">Halo Pak/Bu, terima kasih atas ketertarikannya. Sistem pembukuan kami sangat mudah digunakan, cukup lewat chat biasa dan laporannya otomatis masuk ke Excel. Untuk detail harga, promo, dan link mencoba demonya, silakan klik link WhatsApp kami yang ada di profil (bio) ya. Kami tunggu pesannya!</div>
+            </div>
+        </div>
+
+        <div id="teknis" class="section">
+            <h2 class="section-title">4. Menjawab Keraguan Teknis & Gaptek</h2>
+            
+            <div class="card">
+                <h3>Klien: "Laporannya bisa dilihat di HP nggak mas? Harus pakai laptop?"</h3>
+                <div class="response">Bisa dibuka di HP kok Bapak/Ibu. Namun, karena Laporan Keuangan kami dirancang sangat detail dan lengkap dengan grafik laba rugi, kami sangat menyarankan membukanya melalui Laptop atau Tablet. 
+
+Tujuannya agar tampilannya lebih luas, rapi, dan memuaskan. Biasanya ini sangat nyaman dilihat saat evaluasi tutup warung di malam hari.
+
+Sedangkan untuk operasional siang hari saat menjaga warung, Bapak/Ibu cukup menggunakan HP saja untuk mencatat transaksi jualan lewat chat Telegram. Sangat praktis!</div>
+            </div>
+
+            <div class="card">
+                <h3>Klien: "Wah saya nggak ngerti Excel mas, saya gaptek."</h3>
+                <div class="response">Tenang saja Bapak/Ibu, sistem kami dirancang khusus agar sangat mudah digunakan oleh siapa saja. Patokannya: Jika Bapak/Ibu bisa membalas pesan WhatsApp atau Telegram, maka dipastikan bisa menggunakan LimBot.
+
+Bapak/Ibu sama sekali tidak perlu pusing memikirkan rumus Excel. Semua sistem laporannya sudah kami kerjakan. Bapak/Ibu tinggal klik linknya dan lihat hasilnya berupa tabel yang rapi. Mari saya pandu pelan-pelan untuk mencoba demonya dulu.</div>
+            </div>
+
+            <div class="card">
+                <h3>Klien: "Apakah harus pakai laptop/komputer saat membalas pesannya?"</h3>
+                <div class="response">Sama sekali tidak perlu laptop Bapak/Ibu. Cukup menggunakan HP (Android atau iPhone) yang ada aplikasi Telegramnya. Sangat praktis untuk warung.</div>
+            </div>
+            
+            <div class="card">
+                <h3>Klien: "Kalau HP saya hilang, datanya hilang tidak?"</h3>
+                <div class="response">Data warung Bapak/Ibu 100 persen aman. Semua laporan keuangan langsung tersimpan otomatis di Google Drive (awan). Jadi kalaupun HP hilang atau rusak, Bapak/Ibu tinggal login dari HP baru, dan semua datanya masih utuh tanpa ada yang terhapus.</div>
+            </div>
+        </div>
+
+        <div id="keberatan" class="section">
+            <h2 class="section-title">5. Menangani Keberatan Harga (Objection Handling)</h2>
+            <div class="card">
+                <h3>Klien: "Wah 50 ribu sebulan mahal mas, warung saya cuma kecil-kecilan."</h3>
+                <div class="response">Mohon maaf sebelumnya Bapak/Ibu. Jika kita hitung bersama, biaya langganan Rp 50.000 per bulan itu jatuhnya hanya sekitar Rp 1.600 per hari. Jauh lebih murah daripada segelas es teh.
+
+Dengan Rp 1.600 per hari, Bapak/Ibu ibaratnya mempekerjakan karyawan kasir yang siap sedia 24 jam penuh. Ini sangat sepadan dengan keamanannya. Tidak ada lagi kerugian karena buku utang terselip atau uang bocor yang tidak terlacak. Laba bersih warung langsung ketahuan setiap harinya. 
+
+Bagaimana Bapak/Ibu, mau kita coba dulu 1 bulan agar terasa manfaatnya?</div>
+            </div>
+        </div>
+
+        <div id="followup" class="section">
+            <h2 class="section-title">6. Follow-up & Penutupan Penjualan (Closing)</h2>
+            <div class="card">
+                <h3>Situasi: Klien sudah mencoba demo bot, dan Anda menanyakan keputusannya.</h3>
+                <div class="response">Halo Bapak/Ibu, bagaimana pengalaman mencoba bot kasir demonya kemarin? Apakah format laporan dan fiturnya sudah cocok dengan kebutuhan harian warung Bapak/Ibu?
+
+Jika dirasa sangat membantu, mumpung kami sedang ada promo paket 1 Tahun (hanya Rp 500.000, diskon jauh dari harga normal Rp 1.188.000). Dengan paket ini, Bapak/Ibu akan dibuatkan bot khusus dengan nama toko Bapak/Ibu sendiri, dan datanya seratus persen rahasia milik Bapak/Ibu.
+
+Kira-kira Bapak/Ibu ingin mengambil paket 1 Bulan (Rp 50.000) atau langsung promo 1 Tahun (Rp 500.000)?</div>
+            </div>
+
+            <div class="card">
+                <h3>Situasi: Klien setuju dan menanyakan cara pembayaran.</h3>
+                <div class="response">Baik Bapak/Ibu, untuk pembayarannya silakan ditransfer ke rekening berikut:
+
+Bank: Bank Jago
+No. Rekening: 101108501047
+Atas Nama: MIFTAH ALI MUDIN
+Total Transfer: Rp [TULISKAN NOMINALNYA]
+
+Jika sudah ditransfer, mohon kirimkan bukti resinya ke sini ya. Segera setelah itu, saya akan langsung membuatkan Bot Kasir khusus dengan nama warung Bapak/Ibu. Terima kasih.</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
